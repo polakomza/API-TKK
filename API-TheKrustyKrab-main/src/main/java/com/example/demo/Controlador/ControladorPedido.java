@@ -6,8 +6,14 @@ import com.example.demo.Servicios.ServicioPedido;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
 
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("/pedido")
 public class ControladorPedido {
 
